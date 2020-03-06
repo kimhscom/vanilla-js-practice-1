@@ -15,11 +15,11 @@ console.log(dayOfWeek[4]);
 
 // Object
 const kimInfo = {
-    name:"Hyunsu",
-    age:35,
-    gender:"Male",
-    health:true
-}
+  name: "Hyunsu",
+  age: 35,
+  gender: "Male",
+  health: true
+};
 
 console.log(kimInfo);
 kimInfo.gender = "Female";
@@ -27,32 +27,32 @@ console.log(kimInfo.gender);
 
 // Function
 function sayHello(name, age) {
-    console.log('Hello!', name, 'you have', age);
+  console.log("Hello!", name, "you have", age);
 }
 
 sayHello("French", 31);
 
 function hiGuy(name, age) {
-    return `Hello ${name} you are ${age} years old`;
+  return `Hello ${name} you are ${age} years old`;
 }
 
 const greeting = hiGuy("Hyunsu", 35);
 console.log(greeting);
 
 const calculator = {
-    plus: function(a, b) {
-        return a + b;
-    },
-    minus: function(a, b) {
-        return a - b;
-    },
-    multi: function(a, b) {
-        return a * b;
-    },
-    div: function(a, b) {
-        return a / b;
-    }
-}
+  plus: function(a, b) {
+    return a + b;
+  },
+  minus: function(a, b) {
+    return a - b;
+  },
+  multi: function(a, b) {
+    return a * b;
+  },
+  div: function(a, b) {
+    return a / b;
+  }
+};
 
 const plus = calculator.plus(5, 5);
 console.log(plus);
@@ -76,25 +76,25 @@ title.addEventListener("click", handleClick);
 */
 // if-else
 if ("hyunsu" === "kim") {
-    console.log("hi");
+  console.log("hi");
 } else if ("10" === "11") {
-    console.log("lalala");
+  console.log("lalala");
 } else {
-    console.log("ho");
+  console.log("ho");
 }
 
 // and
 if (20 > 5 && "hyunsu" === "hyunsu") {
-    console.log("yes");
+  console.log("yes");
 } else {
-    console.log("no");
+  console.log("no");
 }
 
 // or
 if (20 > 5 || "hyunsu" === "kim") {
-    console.log("yes");
+  console.log("yes");
 } else {
-    console.log("no");
+  console.log("no");
 }
 
 /*
@@ -131,9 +131,8 @@ const OTHER_COLOR = "#7f8c8d";
 
 const CLICKED_CLASS = "clicked";
 
-
 function handleClick() {
-    /*
+  /*
     const currentColor = title.style.color;
     if (currentColor === BASE_COLOR) {
         title.style.color = OTHER_COLOR;
@@ -141,7 +140,7 @@ function handleClick() {
         title.style.color = BASE_COLOR;
     }
     */
-   /*
+  /*
    const hasClass = title.classList.contains(CLICKED_CLASS);
    if(hasClass) {
        title.classList.remove(CLICKED_CLASS);
@@ -153,20 +152,18 @@ function handleClick() {
 }
 
 function init() {
-    // title.style.color = BASE_COLOR;
-    title.addEventListener("click", handleClick); // click, mouseenter
+  // title.style.color = BASE_COLOR;
+  title.addEventListener("click", handleClick); // click, mouseenter
 }
 init();
 
 function handleOffline() {
-    console.log("Bye bye");
+  console.log("Bye bye");
 }
 
 function handleOnline() {
-    console.log("Welcome back");
+  console.log("Welcome back");
 }
 
 window.addEventListener("offline", handleOffline);
 window.addEventListener("online", handleOnline);
-
-
